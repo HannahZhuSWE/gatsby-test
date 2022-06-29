@@ -20,6 +20,8 @@ jobs:
         node-version: '14'
     - name: Install dependencies
       run: npm ci
+    - name: Install gatsby
+      run: npm install -g gatsby-cli
     - name: Rebuild github page
       run: npm run build
     - name: Deploy webpage
